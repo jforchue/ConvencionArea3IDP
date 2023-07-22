@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <title></title>
+    <style>
+        /*@media (min-width: 0px) and (max-width: 980px) {*/
+        .container input[type=button],
+        .container button,
+        #mensaje {
+            height: 150px;
+            font-size: 40px;
+        }
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="container" style="width:700px">
+        <div id="foreImage" style="
+            background-image:url('images/template2.jpeg');
+            background-repeat:no-repeat;
+            position:absolute;
+            height:1000px;
+            width:700px;
+            background-size:cover">
+            <div id="backImage" style="
+                width:295px;
+                height:295px;
+                position:relative;
+                top:568px;
+                left:78px;
+                border-radius:200%;
+                /*background-image:url('images/captura.png');*/
+                 background-position:50px 2px;"></div>
+        </div>
+
+        <div style="
+            position: relative;
+            width: 700px;
+            bottom: -1012px;
+            padding: 0px 10px 0px 10px;">
+            <div class="input-group">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input"
+                           id="imagenFoto"
+                           aria-describedby="imagenFoto"
+                           accept="image/*"
+                           style="display:none;">
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-secondary col-12 mb-3" onclick="showMessage()"> Más información</button>
+                <input id="colocarImagen"
+                       type="button"
+                       class="btn btn-success col-12 mb-3"
+                       value="Seleccione la imagen"
+                       style="width:100%"
+                       onclick="clickInputFile()" />
+            </div>
+            <div class="row">
+                <button id="plus" class="btn btn-primary col mb-3" style="margin-right:10px;"> Más a la derecha</button>
+                <button id="minus" class="btn btn-primary col mb-3" style="margin-left:10px;"> Más a la izquierda</button>
+            </div>
+            <div class="row">
+                <button id="plusTop" class="btn btn-primary col mb-3" style="margin-right:10px;"> Más arriba</button>
+                <button id="minusTop" class="btn btn-primary col mb-3" style="margin-left:10px;"> Más abajo</button>
+            </div>
+            <div class="row">
+                <button id="bigger" class="btn btn-primary col mb-3" style="margin-right:10px;"> Más grande</button>
+                <button id="smaller" class="btn btn-primary col mb-3" style="margin-left:10px;"> Más pequeña</button>
+            </div>
+            <div class="row">
+                <button id="downloadImage" class="btn btn-primary col"> Descargar</button>
+            </div>
+        </div>
+    </div>
+    <!--<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>-->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!--<script src="lib/bootstrap/dist/js/bootstrap.esm.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.esm.js"></script>-->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="lib/js/site.js"></script>
+</body>
+</html>
