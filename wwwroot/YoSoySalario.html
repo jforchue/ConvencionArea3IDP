@@ -6,6 +6,8 @@
     <link href="lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
     <link href="lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
     <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
     <title></title>
     <style>
         /*@media (min-width: 0px) and (max-width: 980px) {*/
@@ -28,7 +30,7 @@
                 width: 834px;
                 background-size: cover ">
             <div id="backImage" style="width: 440px; height: 440px; position: relative; top: 566px; left: 150px; border-radius: 200%;
-      background-image: url('Images/Sin título.png'); background-position: 50px 2px; "></div>
+      background-image: url('Images/imagen default.PNG'); background-position: 50px 2px; background-size:50px;"></div>
             <div style="position: relative;
               top: 160px;
               left: 490px;
@@ -37,7 +39,8 @@
                     <span style="font-size: 100px;">YO </span>
                     <span style="font-size: 80px;font-weight:100;">ESTOY</span>
                 </div>
-                <span style="border-radius: 20px 20px 20px 20px; background-color: white; font-family: fangsong; font-size: 50px; font-weight: normal; padding-left: 15px;">
+                <span style="border-radius: 20px 20px 20px 20px; background-color: white; 
+font-family: fangsong; font-size: 50px; font-weight: bold; padding-left: 15px; width:313px;">
                     COMPROMETIDO
                 </span>
             </div>
@@ -58,15 +61,45 @@
                 </div>
             </div>
             <div class="row">
-                <button class="btn btn-secondary col-12 mb-3" onclick="showMessage()"> Más información</button>
+                <button style="display:none;" class="btn btn-secondary col-12 mb-3" onclick="showMessage()"> Más información</button>
                 <input id="colocarImagen"
                        type="button"
                        class="btn btn-success col-12 mb-3"
                        value="Seleccione la imagen"
-                       style="width:100%"
+                       style="width: 100%; font-size: 80px;"
                        onclick="clickInputFile()" />
             </div>
+
             <div class="row">
+                <button id="bigger" class="btn btn-primary col mb-3" style="margin-right: 10px; font-size: 80px;">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </button>
+                <button id="plusTop" class="btn btn-primary col mb-3" style="margin-right: 10px; font-size: 80px;">
+                    <i class="fa-solid fa-up-long"></i>
+                </button>
+                <button id="smaller" class="btn btn-primary col mb-3" style=" font-size: 80px;">
+                    <i class="fa-solid fa-magnifying-glass-minus"></i>
+                </button>
+            </div>
+
+            <div class="row">
+                <button id="plus" class="btn btn-primary col mb-3" style="margin-right: 10px; font-size: 80px;">
+                    <i class="fa fa-left-long"></i>
+                </button>
+                <button id="minusTop" class="btn btn-primary col mb-3" style="margin-right: 10px; font-size: 80px;">
+                    <i class="fa-solid fa-down-long"></i>
+                </button>
+                <button id="minus" class="btn btn-primary col mb-3" style=" font-size: 80px;">
+                    <i class="fa fa-right-long"></i>
+                </button>
+            </div>
+            <!--<div class="row">
+            </div>-->
+            <div class="row">
+                <button id="downloadImage" class="btn btn-primary col" style="font-size: 80px;"> Descargar</button>
+            </div>
+
+            <!--<div class="row">
                 <button id="plus" class="btn btn-primary col mb-3" style="margin-right:10px;"> Más a la derecha</button>
                 <button id="minus" class="btn btn-primary col mb-3" style="margin-left:10px;"> Más a la izquierda</button>
             </div>
@@ -80,7 +113,7 @@
             </div>
             <div class="row">
                 <button id="downloadImage" class="btn btn-primary col"> Descargar</button>
-            </div>
+            </div>-->
         </div>
     </div>
     <!--<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>-->
@@ -94,5 +127,7 @@
     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
     <script src="lib/js/site.js"></script>
+    <script src="fontawesome/js/all.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
 </body>
 </html>
